@@ -1,21 +1,36 @@
 <html>
-	<header>
-		<script>
-		//定义函数
-			function add(a,b,c,d,e,f,g,h,i,j){
-				sum=a+b+c+d+e+f+g+h+i+j;
-				alert(sum);
-			}
-			//add(1,1,1,1,1,1,1,1,1,1);
-			
-			function multiplication(a,b,c,d,e,f,g,h,i,j){
-				sum2=a*b*c*d*e*f*g*h*i*j;
-				alert(sum2);
-			}
-			multiplication(2,1,1,1,1,1,1,1,1,1);
-		</script>
-	</header>
-	<body>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		
+		<script>
+		//事件
+			function onOver(obj){
+				obj.innerHTML="HElLO";
+			}
+			function onOut(obj){
+				obj.innerHTML="CHARl";
+			}
+		</script>
+	</head>
+	<body onload=msg()>
+		<div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)"></div>
+		<form>
+			<input type="text" class="txt" onChange="changeDemo(this)">
+			<input type="text" class="txt" onSelect="changeDemo(this)" onfocus="changeDemo2(this)">
+		</form>
+		<script>
+			function changeDemo(bg){
+				bg.style.background="red";
+				alert("提示你要出错了");
+			}
+			function changeDemo2(bg){
+				bg.style.background="blue";
+			}
+			function msg(){
+				alert("网页内荣加载完毕");
+			}
+		</script>
 	</body>
 </html>
