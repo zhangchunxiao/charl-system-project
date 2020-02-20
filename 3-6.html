@@ -1,0 +1,29 @@
+<html>
+	<header>
+		<script>
+			/*全局变量---任何地方都能使用不会被回收*/
+			var n=10;
+			function add(){
+				var i=10; /*局部变量----只能在当前函数中使用，用完释放*/
+				x=20; //全局变量---任何地方都能使用不会被回收----只有add调用之后x才会作为全局变量使用*/
+			}
+			alert(i);//no
+			alert(n);
+			add();
+			alert(x);//add执行之后x才执行
+			
+		</script>
+	</header>
+	<body>
+		
+		<script>
+			var a=10;
+			function demo(){
+				var b=20;
+				c=30;
+			}
+			demo();
+			alert(c);
+		</script>
+	</body>
+</html>

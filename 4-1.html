@@ -1,0 +1,34 @@
+<html>
+	<header>
+		<script>
+		//异常捕获try-catch
+			function demo(){
+				try{
+					alert(str);
+				}catch(err){
+					alert(err);
+				}
+			}
+			//demo();
+		</script>
+	</header>
+	<body>
+		<script>
+			function demo(){
+				try{
+					var e=document.getElementById("txt").value;
+					if(e=" "){
+						throw "第一个用户处理为空，请您输入信息";
+					}
+				}catch(err){
+					alert(err);
+				}
+			}
+		</script>
+		<form>
+			<input id="txt" type="text">
+			<input id="btn" onclick="demo()" type="button" value="确认" >
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<header>
+		<script>
+			/*带返回值的函数*/
+			function add(a,b,c){
+				sum=a+b+c;
+				return sum;
+			}
+			var value1=add(1,2,3);
+			var value2=add(3,3,3);
+			//alert(value1+"charl");
+			//alert(value2+"charles");
+		</script>
+	</header>
+	<body>
+		<p id="pid"></p>
+		<p id="pid2"></p>
+		<script>
+			function compare(m,n){
+				if(m>n){
+					return "m is big!";
+				}else if(m=n){
+					return "they are same!";
+				}else{
+					return "n is big!";
+				}
+			}
+			//var t= compare(1,2);
+			//alert(t);
+			document.getElementById("pid").innerHTML= compare(20,20);
+			document.getElementById("pid2").innerHTML= compare(3111,20);
+		</script>
+		
+	</body>
+</html>
