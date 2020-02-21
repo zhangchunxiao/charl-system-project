@@ -1,0 +1,56 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<div id="divid">
+			<button id="btn1">button</button>
+			<button id="btn2">button2</button>
+			<button id="btn3">button3</button>
+			
+		</div>
+		<script>
+			//浏览器兼容
+			var btn3=document.getElementById("btn3");
+			if(btn3.addEventListener){
+				btn3.addEventListener("click",demo4);
+			}else if(btn3.attachEvent){
+				btn3.attachEvent("onclick",demo4);
+			}else{
+				btn3.onclick =demo4();
+			}
+			
+			function demo4(){
+				alert("Hello button3!");
+			}
+		</script>
+		<script>
+			var btn1= document.getElementById("btn1");
+			btn1.onclick= function (){alert("Hello DOM0级事件处理")};
+			btn1.onclick= function (){alert("Hello DOM0级事件处理2")};//2 会覆盖1
+			//btn1.onclick =null;清除
+			
+		</script>
+		<script>
+			var btn2=document.getElementById("btn2");
+			btn2.addEventListener("click",demo1);
+			btn2.addEventListener("click",demo2);
+			btn2.addEventListener("click",demo3);//不会被覆盖
+			btn2.removeEventListener("click",demo1);
+			//var btn2=document.getElementById("btn2").addEventListener("click",demo);
+			function demo1(){
+				alert("DOM0级事件处理2-1");
+			}
+			function demo2(){
+				alert("DOM0级事件处理2-2");
+			}
+			function demo3(){
+				alert("DOM0级事件处理2-3");
+			}
+			
+		</script>
+		
+	</body>
+</html>

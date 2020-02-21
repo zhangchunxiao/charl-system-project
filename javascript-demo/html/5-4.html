@@ -1,0 +1,30 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<button id="btnid">button</button>
+		<button id="btn">button2</button>
+		<script>
+			document.getElementById("btnid").addEventListener("click", function(){
+				alert("Hello World!");
+			})
+		</script>
+		
+		<script>//句柄多个添加不会覆盖
+			var x=document.getElementById("btn");
+			x.addEventListener("click", Hello);
+			x.addEventListener("click",World);
+			x.removeEventListener("click",Hello);
+			function Hello(){
+				alert("Hello");
+			}
+			function World(){
+				alert("World");
+			}
+			
+		</script>
+	</body>
+</html>
