@@ -1,0 +1,42 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<a id="aid" href="http://www.baidu.com/">website</a>
+		<button onclick="changeWebsite()">Button</button>
+		<p id="pid">hello</p>
+		<table>hello</table>
+		<p>hello</p>
+		<p>hello</p>
+		<button onclick="demo()">button</button>
+		<button onclick="changeId()">button2</button>
+		<button onclick="changeTag()">button3</button>
+		<img id="imgid" width="350" height="234" src="../img/doctor01.jpg">
+		<button onclick="changeImg()">Button4</button>
+		<script>
+			function changeImg(){
+				document.getElementById("imgid").src="../img/doctor02.jpg";
+			}
+			
+			function changeWebsite(){
+				document.getElementById("aid").href = "https://www.jikexueyuan.com";
+			}
+			//改变文档输出流
+			//document.write("world!");
+			function demo(){
+				document.write("world");
+			}
+			function changeId(){
+				var a = document.getElementById("pid").innerHTML="what's up?";
+				//a.innerHTML = "World";
+			}
+			function changeTag(){
+				var b = document.getElementsByTagName("table");
+				alert(b.innerHTML="wait a minutes!");
+			}
+		</script>
+	</body>
+</html>
