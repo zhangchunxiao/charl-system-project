@@ -1,0 +1,25 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<script>
+			people1 = new Object();//创建people对象
+			people2 = new Object();//创建people对象
+			people1.name="charl";
+			people1.age="30";//fangfa1
+			document.write("姓名"+people1.name+"年龄"+people1.age);
+			people2={name:"iwen",age:"30"};//fangfa2
+			document.write("姓名"+people2.name+"年龄"+people2.age);
+			function people(name,age){
+				this._name = name;//通过this索引
+				this._age = age;
+			}
+			son = new people("charl","30");
+			document.write(son._name,son._age);
+			
+		</script>
+	</body>
+</html>

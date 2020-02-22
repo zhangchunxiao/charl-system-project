@@ -1,0 +1,36 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<div id="div">
+			<button id="btn1">button</button>
+			<button id="btn2">button2</button>
+			<a id="aid" href="http://www.baidu.com">baidu</a>
+		</div>
+		
+		<script>
+			document.getElementById("btn1").addEventListener("click",showType);
+			function showType(event){
+				alert(event.type);
+			}
+			document.getElementById("btn2").addEventListener("click",showTarget);
+			function showTarget(event){
+				alert(event.target);
+				event.stopPropagation();//阻止时间冒泡
+			}
+			document.getElementById("div").addEventListener("click",showDiv);
+			function showDiv(){
+				alert("div");
+			}
+			
+			document.getElementById("aid").addEventListener("click",hideHerf);
+			function hideHerf(event){
+				event.stopPropagation();
+				event.preventDefault();//阻止默认事件
+			}
+		</script>
+	</body>
+</html>
