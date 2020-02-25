@@ -7,10 +7,15 @@
 	<body>
 		<script>
 			var str="helloworld";
+			var str1="hi jikexueyuan";
 			//document.write(str.length);//字符串长度
 			document.write(str.indexOf("or"));//在当前字符串查找他所在的位置，不存在为-1
-			document.write(str.match("World"));
-			
+			document.write(str.match("world"));
+			document.write(str.replace("world","challenge"));
+			document.write(str.toUpperCase());
+			document.write(str.toLowerCase());
+			var s=str1.split(" ");
+			document.write(s[1]);
 		</script>
 	</body>
 </html>
