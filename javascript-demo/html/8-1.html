@@ -1,0 +1,65 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<p name = "pn">hello</p>
+		<p name = "pn">hello</p>
+		<p name = "pn">hello</p>
+		<p name = "pn">hello</p>
+		
+		<a id="aid" title="得到a标签的属性">hello sumg</a>
+		<br>-------------------<br>
+		<a id="aid2">aid22222</a>
+		<ul>
+			<li>
+			
+			</li>
+			<li>
+			
+			</li>
+		</ul>
+		<script>
+			function getName(){
+				var count= document.getElementsByName("pn");
+				var count1= document.getElementsByTagName("p");
+				alert(count.length);
+				alert(count1.length);
+				var p=count[0];
+				p.innerHTML="world";
+				
+				var p=count1[2];
+				p.innerHTML="piple";
+			}
+			getName();
+		</script>
+		<script>
+			function getAttr(){
+				var anode= document.getElementById("aid");
+				var attr=anode.getAttribute("title");
+				alert(attr);
+			}
+			getAttr();
+			document.write("");
+			function setAttr(){
+				var anode= document.getElementById("aid2");
+				anode.setAttribute("title","动态设置aid2 title part text");
+				var attr= anode.getAttribute("title");
+				alert(attr);
+			}
+			setAttr();
+		</script>
+		<script>
+		//li就是ul对应的子节点
+			function getChildNode(){
+				var childnode=document.getElementsByTagName("ul")[0].childNodes;//访问子节点
+				document.write(childnode.length);
+				
+				
+			}
+			getChildNode();//因为ul和li后面的空白项也算一个
+		</script>
+	</body>
+</html>

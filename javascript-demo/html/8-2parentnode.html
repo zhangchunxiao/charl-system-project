@@ -1,0 +1,63 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<div id="div">
+			<p id="pid">div de p hello super</p>
+			<a id ="aid">bulabula</a>
+		</div>
+		<script>
+			function getParentNode(){
+				var div=document.getElementById("pid");
+				alert(div.parentNode.nodeName);
+			}
+			getParentNode();//获取父节点的名称
+			
+			function createNode(){//动态创建节点
+				var body= document.body;
+				var input=document.createElement("input");
+				input.type="button";
+				input.value="按钮";
+				// 添加到body中
+				body.appendChild(input);
+				
+			}
+			createNode();
+			//create text node please do italic
+			
+			function addNode(){
+				var div =document.getElementById("div");
+				var node = document.getElementById("pid");
+				var newnode= document.createElement("p");
+				newnode.innerHTML="动态生成p元素";
+				//div.appendChild(p);
+				div.insertBefore(newnode,node);//1新节点，2位置节点
+			
+			}
+			//addNode();
+			//删除节点div下的p元素,**********************
+			function removeNode(){
+				var div= document.getElementById("div");
+				var p=div.removeChild(div.childNodes[1]);
+				alert(div.childNodes[1]);
+				
+			}
+			removeNode();
+			
+			function getSize(){
+				var width=document.documentElement.offsetWidth;
+				var height=document.documentElement.offsetHeight;
+				alert(width+","+height);
+				
+				
+				//所有浏览器兼容 
+				var width=document.body.offsetWidth||document.documentElement.offsetWidth;
+				var height=document.body.offsetHeight||document.documentElement.offsetHeight;
+			}
+			getSize();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<button id="btn" onclick="btnClick()">click me</button>
+		<button id="btn2" onclick="closeWin()">close me </button>
+		<script>
+			window.document.write("hello");
+			document.write("<br>");
+			window.document.write("kuan:"+window.innerWidth+"gao:"+window.innerHeight);
+			
+			function btnClick(){
+				window.open("8-1.html");//canshu1 url,canshu2 page name ,canshu3 window width,height,canshu4 location
+				
+				window.open("8-1.html","windoname","height=400,width=400,top=200,left=200");
+			}
+			
+			
+		</script>
+		<script>//need to fix
+			function closeWin(){
+				if(navigator.userAgent.indexOf("MSIE")>0){
+				if(navigator.userAgent.indexOf("MSIE 6.0")>0){
+					window.opener=null;
+					window.close();
+				}else
+					window.open('','_top');
+					window.top.close();
+				}else if(navigator.userAgent.indexOf("Firefox")>0){
+					window.location.href='about:blank';
+				
+				}else{
+					window.opener=null;
+					window.open('','_self','');
+					window.close();
+				}
+			}
+			}//error
+		</script>
+		<script>
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<script>
+			//from [0]
+			var a=["hi","world"];
+			var b=["ni"];
+			var c=a.concat(b);
+			document.write(c);
+			document.write("<br>-------------<br>");
+			var d=["c","o","l","d","1"];
+			document.write(d.sort());
+			document.write("<br>-------------<br>");
+			var f=["43","33","23","21","11"];
+			document.write(f.sort());//up
+			document.write("<br>-------------<br>");
+			document.write(f.sort(function(a,b){
+				return b-a;//daoxu
+			}));
+			document.write("<br>-------------<br>");
+			var e=["red","bule"];
+			document.write(e.push("m"));//末尾追加
+			document.write("<br>-------------<br>");
+			document.write(e);
+			document.write("<br>-------------<br>");
+			var n=["c","b","a"];
+			document.write(n.reverse());//翻转
+		</script>
+	</body>
+</html>

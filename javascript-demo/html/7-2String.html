@@ -1,0 +1,28 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<script>
+			var str="helloworld";
+			var str1="hi jikexueyuan";
+			//document.write(str.length);//字符串长度
+			document.write(str.indexOf("or"));//在当前字符串查找他所在的位置，不存在为-1
+			document.write("-------<br>");
+			document.write(str.match("world"));//内容匹配，有打印，没有输出空
+			document.write("-------<br>");
+			document.write(str.replace("world","challenge"));//更换字符串内容(修改的,修改成)
+			document.write("-------<br>");
+			document.write(str.toUpperCase());//转换成大写
+			document.write("-------<br>");
+			document.write(str.toLowerCase());//转换成小写
+			document.write("-------<br>");
+			var s=str1.split(" ");//按照空格分割
+			document.write(s[1]);
+			document.write("-------<br>");
+			document.write(s[0]);
+		</script>
+	</body>
+</html>
