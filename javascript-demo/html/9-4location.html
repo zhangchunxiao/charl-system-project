@@ -1,0 +1,33 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<button id="btn" onclick="getLoc()">anniu hostname</button>
+		<button id="btn2" onclick="getPos()">anniu pathname</button>
+		<button id="btn3" onclick="getPo()">anniu port</button>
+		<p id="pid"></p>
+		<p id="pid2"></p>
+		<p id="pid3"></p>
+		<button onclick="getL()">baidu</button>
+		<script>
+			function getLoc(){
+				document.getElementById("pid").innerHTML = window.location.hostname;
+				alert(window.location.hostname);//hostname
+			}
+			function getPos(){
+				document.getElementById("pid2").innerHTML = window.location.pathname;//pathname
+			}
+			function getPo(){
+				//document.getElementById("pid3").innerHTML = window.location.port;//port
+				//document.getElementById("pid3").innerHTML = window.location.href;//href
+				document.getElementById("pid3").innerHTML = window.location.protocal;
+			}
+			function getL(){
+				location.assign("http://www.baidu.com");//page 被重新定义
+			}
+		</script>
+	</body>
+</html>

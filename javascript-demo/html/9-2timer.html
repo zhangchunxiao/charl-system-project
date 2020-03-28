@@ -5,14 +5,39 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
 	<body>
+		<p id="ptime"></p>
+		<button id="btn" onclick="stopTime()">stop me</button>
+		<div>
+			<button id="btn2" onclick="myWin()">open this window</button>
+		    <button id="btn3" onclick="stopWin()">stop this window</button>
+		</div>
+		
 		<script>
 			var mytime=setInterval(function(){
-				
+				getTime();
 			},1000);
 			
 			function getTime(){
 				var d=new Date();
-				var t= d.toLocaleDateString();
+				var t= d.toLocaleTimeString();
+				document.getElementById("ptime").innerHTML=t;
+			}
+			//qingchu setInterval
+			function stopTime(){
+				clearInterval(mytime);
+			}
+		</script>
+		<script>
+			var win;
+			function myWin(){
+				alert("hello");
+				win=setTimeout(function(){
+					myWin();
+				},3000);
+			}
+			//stop win
+			function stopWin(){
+				clearTimeout(win);
 			}
 		</script>
 	</body>
