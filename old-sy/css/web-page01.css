@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+div,li,ul,span{
+    margin:0px;
+    padding:0px;
+}
+header{
+    background-color: red;
+    height: 40px;
+}
+.wb-nav{
+    display: flex;
+    flex-direction: row;
+}
+.wb-nav-logo div{
+    padding-top:10px;
+
+    float:right;
+
+}
+.wb-nav-middle{
+    height:40px;
+    float: left;
+    flex: auto;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+}
+.wb-nav-right{
+    background-color: blue;
+
+    color:#fff;
+}
+.wb-nav-right img{
+    padding-top:3px;
+}
+.wb-nav-middle ul{
+    margin-left: 60px;
+    margin-right:60px;
+}
+.wb-nav-middle li{
+    float:left;
+    padding-bottom:13px;
+    padding-top:13px;
+    padding-right:30px;
+    list-decoration:none;
+}
+.wb-nav-middle li a{
+    text-decoration:none;
+
+}
+.wb-nav-middle li a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.tab ul{
+    display: flex;
+    flex-direction: row;
+}
+.tab ul li{
+    flex: auto;
+    background-color: pink;
+    list-style:none;
+    width: 50px;
+    margin:0px;
+    padding:0px;
+}
+.tab ul li a{
+    text-decoration:none;
+}
+footer{
+    background-color: orange;
+}
+.content{
+    flex: auto;
+    background-color: blue;
+    display:flex;
+
+}
+.content aside{
+    width: 340px;
+    height:800px;
+    margin: auto;
+
+}
+.content aside ul li{
+    list-style:none;
+}
+.content aside table{
+    width:200px;
+    height:200px;
+    margin-left:70px;
+
+
+}
+.box_01{
+    width:830px;
+    margin-left:70px;
+    border:1px solid #fff;
+}
+.box_01_right{
+    float:right;
+}
+.box_02{
+    width:830px;
+    margin-left:70px;
+    border:1px solid #fff;
+}
+.box_02_right{
+    float:right;
+}
+.line01,.line03{
+    border-right:1px solid #fff;
+}
+.line02,.line01{
+    border-bottom:1px solid #fff;
+}
+.content article{
+    flex: auto;
+    background-color: green;
+}
+.clearfix:after{
+    content:"\20";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{
+    zoom:1;
+}
+.tabBar{
+    border-bottom: 2px solid #222;
+}
+.tabBar span{
+    background-color: #e8e8e8;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+.tabBar span.current{
+    background-color: #222;
+    color: #fff;
+}
+.tabCon{
+    display: block;
+}
+.HuiTab{
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+}

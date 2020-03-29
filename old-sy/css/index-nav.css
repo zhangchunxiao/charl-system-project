@@ -1,0 +1,191 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+    font-style:normal;
+}
+li,ul,img,a,div{
+    border:0;
+    list-style:none;
+}
+div{
+    display:block;
+}
+a{
+    color:#333;
+    text-decoration:none;
+    outline:none;
+}
+em{
+    font-weight:normal;
+}
+.ue-bar{
+    background-color:#222;
+
+}
+.ue-bar-wrap{
+    width:980px;
+    height:70px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+
+}
+.ue-bar-logo{
+    width:134px;
+    float:left;
+    height:40px;
+    padding-right:10px;
+    padding-top:8px;
+}
+.ue-bar-logo a{
+    width:100%;
+    height:100%;
+    margin-top:12px;
+}
+.ue-bar-nav{
+    height:40px;
+    float:left;
+
+}
+.ue-bar-nav li{
+    height:40px;
+    float:left;
+    margin-right:20px;
+
+}
+.ue-bar-nav li *{
+    color:#fff;
+    font-size:14px;
+    display:inline-block;
+    line-height:17px;
+    vertical-align:top;
+}
+.ue-bar-nav li a{
+    height:22px;
+    line-height:22px;
+    padding:26px 17px;
+
+}
+.ue-bar-nav li.active{
+    background-color:#333;
+}
+.ue-bar-nav li a:hover{
+    background-color:#333;
+}
+body{
+    background:url("../img/Tulip.jpg");
+    font-size:12px;
+    font-family:arial, sans-serif;
+}
+#header{
+    height:31px;
+    min-width:990px;
+    padding: 9px 10px 0 0;
+    position:relative;
+}
+#hd_nav{
+    float:right;
+
+}
+
+ul{
+    list-style:none;
+}
+
+#hd_nav li{
+    border-right: 1px solid rgba(255,255,255,0.2);
+    float:left;
+    height:14px;
+    padding:0 10px;
+
+}
+#hd_nav li a{
+    text-decoration:none;
+    cursor:auto;
+}
+#hd_nav li.skin a{
+    padding-left: 22px;
+    position: relative;
+}
+#hd_nav a{
+    color:#fff;
+    height:14px;
+    line-height:14px;
+}
+#hd_nav a:hover{
+   text-decoration: underline;
+}
+/*#hd_nav li span.icon{
+    background:url("../img/next_down.png");
+}
+#hd_nav li .icon{
+    background:url("../img/icon.png");
+    no-repeat;
+    left:0px;
+    position: absolute;
+}
+
+#hd_nav .skin .icon{
+    background-position:0 -270px;
+    height:15px;
+    top:-1px;
+    width:16px;
+}*/
+.log{
+    padding-left:41px;
+    position:relative;
+}
+.log avat{
+    border-radius:18px;
+    box-shadow:0 1px 5px rgba(87,87,87,0.5);
+    height:20px;
+    left:10px;
+    position:absolute;
+    top:-2px;
+    width:20px;
+}
+.a1{
+    margin-left:30px;
+}
+.a2{
+    margin-left:5px;
+}
+article{
+    background-color:#888;
+    margin:0px;
+    padding:0px;
+    line-height:1.4em;
+    min-width:600px;
+
+}
+.adminMenuWarp{
+    display:relative;
+    float:left;
+    width:160px;
+    background-color:#666;
+}
+adminMenu{
+    clear: left;
+    margin:12px 0;
+    list-style:none;
+    width:160px;
+    background-color:#222;
+
+}
+.menu{
+    min-height:34px;
+    cursor: auto;
+
+}
+.menu a{
+    padding:10px 0;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    text-indent: 40px;
+    /*缩进40xp 不增加边距*/
+}
+.menu a:hover{
+    background-color: orange;
+}
