@@ -1,0 +1,195 @@
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/web-page02.css">
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../js/web-page02.js"></script>
+	</head>
+	<body>
+		<header>
+            <div class="wb-nav">
+                <div class="wb-nav-logo">
+                    <img src="../img/logo.png" width="40" height="40">
+                    <div>windows</div>
+                </div>
+                <div class="wb-nav-middle">
+                    <ul>
+                        <li><a href="#">DashBoard</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="wb-nav-right">
+                    <img src="../img/play_down.png">
+                    <span>Charlies</span>
+                    <select>
+                        <option>xuanze</option>
+                    </select>
+                    <img src="../img/play_rest.png">
+                </div>
+            </div>
+        </header>
+        <div id="tab_demo" class="HuiTab">
+          <div class="tabBar clearfix">
+              <span>选项卡一</span>
+              <span>选项卡二</span>
+              <span>自适应宽度</span>
+          </div>
+          <div class="tabCon">
+              <div class="content">
+                <aside>
+                    <table>
+                            <tr>
+                                <td class="line01">1</td>
+                                <td class="line02">2</td>
+                            </tr>
+                            <tr>
+                                <td class="line03">3</td>
+                                <td class="line04">4</td>
+                            </tr>
+                    </table>
+                    <ul>
+                        <li><img src="../img/play_down.png">1</li>
+                        <li><img src="../img/play_down.png">1</li>
+                        <li><img src="../img/play_down.png">1</li>
+                        <li><img src="../img/play_down.png">1</li>
+                        <li><img src="../img/play_down.png">1</li>
+                        <li><img src="../img/play_down.png">1</li>
+                    </ul>
+                </aside>
+                <article>
+                    <div class="box_01">
+                        <div>
+                            <span>name</span>
+                            <div class="box_01_right">
+                                <button type="button" value="anniu">add</button>
+                                <img class="toggleImg" src="../img/play_rest.png">
+                            </div>
+                        </div>
+                        <table class="display:none;">
+                            <tr>
+                                <td>11</td>
+                                <td>22</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>22</td>
+                                <td>33</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="box_02">
+                        <div>
+                            <span>name</span>
+                            <div class="box_02_right">
+                                <button type="button" value="anniu">add</button>
+                                <a href="#" class="toggleIcon"  ontoggle="togIco()">
+                                   <img class="toggleImg" id="togI" src="../img/play_rest.png">
+                                </a>
+
+                            </div>
+                            <script>
+                                function togIco(){
+                                    var x=document.getElementById("togI");
+                                    if(x.src="../img/play_rest.png"){
+                                        x.src="../img/play_down.png";
+                                    }else if(x.src="../img/play_down.png"){
+                                        x.src="../img/play_rest.png";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <table class="display:none;">
+                            <tr>
+                                <td>11</td>
+                                <td>22</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>22</td>
+                                <td>33</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+              </div>
+          </div>
+          <div class="tabCon">
+              <div class="content">
+                  <aside>
+                      <div>
+                          <p>2020.01.03</p>
+                          <span>Total Number</span>
+                          <p style="font-size:40px;">424/465</p>
+                          <span><img src="../img/play_down.png" style="background-color:red;">16</span>
+                      </div>
+
+                      <div>
+                          <table>
+                              <tr class="row">
+                                  <th>1</th>
+                                  <th>2</th>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </aside>
+                  <article>
+                      <div class="total">
+                          <div class="aaa">
+                                <span>The table name</span>
+                                <button value="add" id="btn" class="button">add</button>
+
+                          </div>
+                          <a href="#" class="click_imgBox"><img src="../img/reveal_rest.png"></a>
+                          <div class="img_box">
+<!--                              <img src="../img/Tulip.jpg">-->
+                          </div>
+                      </div>
+                      <div class="bottom">
+                          <div class="1">1</div>
+                          <div class="2">2</div>
+                          <div class="3">3</div>
+
+                      </div>
+                  </article>
+              </div>
+
+
+          </div>
+          <div class="tabCon">内容三
+              <div>
+                  <div class="left">l</div>
+                  <div class="right">r</div>
+              </div>
+
+          </div>
+        </div>
+<!--        <div class="tab">-->
+<!--            <ul>-->
+<!--                <li><a href="#">标签一</a></li>-->
+<!--                <li><a href="#">标签一</a></li>-->
+<!--                <li><a href="#">标签一</a></li>-->
+<!--                <li><a href="#">标签一</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+<!--        <footer>footer-->
+
+<!--        </footer>-->
+	</body>
+</html>

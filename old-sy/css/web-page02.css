@@ -155,10 +155,56 @@ footer{
     color: #fff;
 }
 .tabCon{
-    display: block;
+    display: inline-block;
 }
 .HuiTab{
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
 }
+.total{
+    border:#00FF00 solid 1px;
+    font-size:12px;
+    display:flex;
+    flex-decoration:row;
+}
+.click_imgBox{
+
+    font-size:14px;
+    font-weight:bolder;
+    background-color:#FC6;
+    flex:auto;
+
+}
+.img_box{
+    padding:8px;
+    font-size:12px;
+    font-family:微软雅黑;
+    text-align:center;
+    display:none;
+
+}
+.button{
+
+    width:48px;
+    height:26px;
+}
+.row{
+    border-bottom:1px solid #fff;
+}
+
+.bottom{
+    width:100%;
+    display:flex;
+    flex-decoration:row;
+}
+.1,.2,.3{
+    width:200px;
+    height:200px;
+    flex:auto;
+    background-color:orange;
+}
+
+.open{
+    background-color:#0000FF;
+  }
