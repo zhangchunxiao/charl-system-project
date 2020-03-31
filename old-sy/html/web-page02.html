@@ -90,16 +90,7 @@
                                 </a>
 
                             </div>
-                            <script>
-                                function togIco(){
-                                    var x=document.getElementById("togI");
-                                    if(x.src="../img/play_rest.png"){
-                                        x.src="../img/play_down.png";
-                                    }else if(x.src="../img/play_down.png"){
-                                        x.src="../img/play_rest.png";
-                                    }
-                                }
-                            </script>
+
                         </div>
                         <table class="display:none;">
                             <tr>
@@ -121,10 +112,10 @@
               <div class="content">
                   <aside>
                       <div>
-                          <p>2020.01.03</p>
-                          <span>Total Number</span>
-                          <p style="font-size:40px;">424/465</p>
-                          <span><img src="../img/play_down.png" style="background-color:red;">16</span>
+                          <p style="text-align:center;">2020.01.03</p>
+                          <p style="text-align:center;">Total Number</p>
+                          <p style="font-size:40px;text-align:center;">424/465</p>
+                          <p style="text-align:center;"><img src="../img/play_down.png" style="background-color:red;">16</p>
                       </div>
 
                       <div>
@@ -150,14 +141,12 @@
                   </aside>
                   <article>
                       <div class="total">
-                          <div class="aaa">
-                                <span>The table name</span>
-                                <button value="add" id="btn" class="button">add</button>
 
-                          </div>
-                          <a href="#" class="click_imgBox"><img src="../img/reveal_rest.png"></a>
-                          <div class="img_box">
-<!--                              <img src="../img/Tulip.jpg">-->
+                          <span>The table name</span>
+                          <button value="add" id="btn" class="button">add</button>
+
+                          <a href="#" class="click_imgBox" id="click_imgBox"><img src="../img/reveal_rest.png"></a>
+                          <div class="img_box" id="img_box">
                           </div>
                       </div>
                       <div class="bottom">
@@ -171,10 +160,140 @@
 
 
           </div>
-          <div class="tabCon">内容三
-              <div>
-                  <div class="left">l</div>
-                  <div class="right">r</div>
+          <div class="tabCon">
+              <ul>
+                  <li class="li_first">
+                      <div>
+                          <p style="text-align:center;">2020.01.03</p>
+                          <p style="text-align:center;">Total Number</p>
+                          <p style="font-size:40px;text-align:center;">424/465</p>
+                          <p style="text-align:center;"><img src="../img/play_down.png" style="background-color:red;">16</p>
+                      </div>
+                  </li>
+                  <li class="li_second">
+                      <table>
+                          <tr>
+                              <th>name</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th>
+                                  <input type="button" value="add">
+                              </th>
+                          </tr>
+                          <tr>
+                              <td class="bk">1</td>
+                              <td class="bk">1</td>
+                              <td class="bk">1</td>
+                              <td class="bk">1</td>
+                              <td class="bk">1</td>
+                              <td class="bk">1</td>
+                          </tr>
+                      </table>
+                  </li>
+              </ul>
+              <div style="display:inline-block;width:100%;">
+                  <aside style="display:inline-block;background-color:red;width:30%;">
+                      <div>
+                          <p style="text-align:center;">2020.01.03</p>
+                          <p style="text-align:center;">Total Number</p>
+                          <p style="font-size:40px;text-align:center;">424/465</p>
+                          <p style="text-align:center;"><img src="../img/play_down.png" style="background-color:red;">16</p>
+                      </div>
+
+                      <div>
+                          <table>
+                              <tr class="row">
+                                  <th>1</th>
+                                  <th>2</th>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                              <tr class="row">
+                                  <td>1</td>
+                                  <td>2</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </aside>
+                  <article style="display:inline-block;vertical-align:top; width:69%;margin-top:10px;">
+                      <ul>
+                          <li>
+                              <table class="background-color:red;">
+                                  <tr>
+                                      <th>name</th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th>
+                                          <input type="button" value="add">
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                  </tr>
+                              </table>
+                          </li>
+                          <li>
+                              <table class="background-color:red;">
+                                  <tr>
+                                      <th>name</th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th>
+                                          <input type="button" value="add">
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                  </tr>
+                              </table>
+                          </li>
+                          <li>
+                              <table class="background-color:red;">
+                                  <tr>
+                                      <th>name</th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th>
+                                          <input type="button" value="add">
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                      <td class="bk">1</td>
+                                  </tr>
+                              </table>
+                          </li>
+                      </ul>
+
+                  </article>
               </div>
 
           </div>

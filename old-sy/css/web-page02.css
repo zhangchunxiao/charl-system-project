@@ -50,10 +50,10 @@ header{
     padding-bottom:13px;
     padding-top:13px;
     padding-right:30px;
-    list-decoration:none;
+    list-direction:none;
 }
 .wb-nav-middle li a{
-    text-decoration:none;
+    text-direction:none;
 
 }
 .wb-nav-middle li a:hover{
@@ -74,7 +74,7 @@ header{
     padding:0px;
 }
 .tab ul li a{
-    text-decoration:none;
+    text-direction:none;
 }
 footer{
     background-color: orange;
@@ -98,6 +98,9 @@ footer{
     width:200px;
     height:200px;
     margin-left:70px;
+    line-height:36px;
+    font-size:14px;
+    text-align:center;
 
 
 }
@@ -124,6 +127,7 @@ footer{
     border-bottom:1px solid #fff;
 }
 .content article{
+width:990px;
     flex: auto;
     background-color: green;
 }
@@ -156,6 +160,25 @@ footer{
 }
 .tabCon{
     display: inline-block;
+    width:100%;
+}
+.tabCon li{
+    display:inline-block;
+    height:260px;
+    background-color:orange;
+}
+.li_first{
+    width:30%;
+}
+.li_second{
+    width:69%;
+    vertical-align:top;
+}
+.bk{
+width:170px;
+height:170px;
+background-color:blue;
+
 }
 .HuiTab{
     margin-top:10px;
@@ -166,14 +189,14 @@ footer{
     border:#00FF00 solid 1px;
     font-size:12px;
     display:flex;
-    flex-decoration:row;
+    flex-direction:row;
 }
 .click_imgBox{
 
     font-size:14px;
     font-weight:bolder;
     background-color:#FC6;
-    flex:auto;
+    float:right;
 
 }
 .img_box{
@@ -196,7 +219,7 @@ footer{
 .bottom{
     width:100%;
     display:flex;
-    flex-decoration:row;
+    flex-direction:row;
 }
 .1,.2,.3{
     width:200px;
